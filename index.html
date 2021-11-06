@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery options</title>
+</head>
+<body>
+    <h1>Delivery options by post-code</h1>
+     <div class = "container">
+         <label for="postcode">Enter your post code here</label>
+         <input type="text" id = "postcode">
+         <button class = "btn btn-primary" id = "submit">Search</button>
+     </div>
+
+     <div class = "container" style = "display:none" id = "option"> Your available delivery options are: 
+         <div id = "deliveryOptions"></div>
+     </div>
+     <div class = "container" style = "display:none" id = "invalid">Please enter a valid postcode</div>
+</body>
+<script src="script.js"></script>
+</html>
